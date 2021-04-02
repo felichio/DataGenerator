@@ -36,25 +36,6 @@ class Program
         string[] CollectionKeys;
         
         
-        P pp = new P("person1", new CollectionV() {
-            new P("name", "felix"),
-            new P("buffer", new CollectionV() {
-                new P("person2", new ScalarV<int>(23)),
-                new P("cat", "male")
-            }),
-            new P("buffer2", new CollectionV() {
-                new P("person3", new ScalarV<double>(23.2)),
-                new P("dog", new CollectionV() {
-                    new P("person4", new ScalarV<double>(33.2)),
-                    new P("plane", new CollectionV() {
-                        new P("person2", new ScalarV<double>(23.2)),
-                        new P("cat", new CollectionV(){})
-                    })
-                })
-            }),
-            new P("age", new ScalarV<int>(22))
-        });
-        
 
         OptionSet p = new OptionSet()
         {
