@@ -40,9 +40,9 @@ class Program
         OptionSet p = new OptionSet()
         {
             {"n=", "{number} of items to generate", (int v) => n = v},
-            {"d=", "maximum {level} of nesting [0, 16]", (int v) => d = v},
-            {"l=", "maximum {level} of charactes for string values, \n[0, 1000]", (int v) => l = v},
-            {"m=", "maximum {number} of keys inside values, [0, 1000]", (int v) => m = v},
+            {"d=", "maximum {level} of nesting", (int v) => d = v},
+            {"l=", "maximum {level} of charactes for string values", (int v) => l = v},
+            {"m=", "maximum {number} of keys inside values", (int v) => m = v},
             {"k|template=", "the {file} template for key-value associations", v => KeyValueFile = v},
             {"h|help", "show this message", v => showhelp = v != null},
         };
